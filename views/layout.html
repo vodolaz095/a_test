@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="weatherApp">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>[[title]]</title>
+    <meta name="description" content="[[description]]"/>
+    <meta name="keywords" content="[[keywords]]"/>
+    <meta name="author" content="vodolaz095"/>
+    [[#css]]
+    <link rel="stylesheet" href="[[href]]" type="text/css" media="[[media]]"/>
+    [[/css]]
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+</head>
+<body>
+
+<article class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- YIELD START -->
+            [[& yield ]]
+            <!-- YIELD STOP -->
+        </div>
+    </div>
+</article>
+
+
+<footer id="footer">
+    <div class="container">
+        <p>&copy; 2014 <a href="//github.com/vodolaz095">vodolaz095</a></p>
+    </div>
+</footer>
+[[#javascripts]]
+<script type="text/javascript" src="[[url]]"></script>
+[[/javascripts]]
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</body>
+</html>

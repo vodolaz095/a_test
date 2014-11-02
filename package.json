@@ -1,0 +1,19 @@
+{
+  "name": "agora-test",
+  "version": "0.0.1",
+  "description": "Test task",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+  },
+  "dependencies":{
+    "hunt":"0.2.4",
+    "request": "2.44.0"
+  },
+  "author": "Anatolij Ostroumov",
+  "license": "MIT"
+}

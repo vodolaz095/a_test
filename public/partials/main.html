@@ -1,0 +1,19 @@
+<h1>Weather in Moscow - now is {{dts}}</h1>
+<table id="recentVisits" class="table-responsive table-hover col-sm-10" border="1" ng-controller="mainController">
+    <thead>
+    <tr>
+        <th>Time</th>
+        <th>Temperature</th>
+        <th>Pressure</th>
+        <th>Humidity</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr  ng-repeat="weatherRecord in weatherRecords | orderBy:'dts':true ">
+        <td>{{weatherRecord.dts | date : 'mediumTime'}}</td>
+        <td>{{weatherRecord.temp}}</td>
+        <td>{{weatherRecord.pressure}}</td>
+        <td>{{weatherRecord.humidity}}</td>
+    </tr>
+    </tbody>
+</table>
