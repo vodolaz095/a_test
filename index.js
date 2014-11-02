@@ -45,7 +45,7 @@ hunt
     });
 
     router.get('/api/v1/weather', function (req, res) {
-      var ago = new Date(Date.now() - 24 * 60 * 60);
+      var ago = new Date(Date.now() - 24 * 60 * 60 * 1000);
       req.model.Weather
         .find({"dts": {$gt: ago, $lt: new Date()}})
         .sort('-dts')
